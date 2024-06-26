@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .icons{
+        background-image: url('../imgs/icon-menu.svg');
+        background-image: url('../imgs/icon-close-menu.svg');
+        background-image: url('../imgs/icon-arrow-down.svg');
+        background-image: url('../imgs/icon-arrow-up.svg');
+    }
+}
