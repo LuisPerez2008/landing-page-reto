@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,700,500;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+    </head>
+    <body class="font-principal z-30 bg-Almost-white" id="cuerpo">
+        
+        <header class="flex justify-between p-7 md:items-center md:p-2 md:px-5 md:max-w-[90%] md:mx-auto ">
+            <img class="max-w-[150px] md:w-28 " src="./src/imgs/logo.svg" alt="logo" />
+            <div class="flex items-center md:flex-grow ">
+                <input type="checkbox" name="" id="menu" class="peer hidden ">
+                <label for="menu" class="w-6 h-6 cursor-pointer bg-open-menu bg-cover peer-checked:bg-close-menu z-50 md:hidden "></label>
+                <div class="fixed inset-0 bg-black opacity-40  transition-all translate-x-full peer-checked:translate-x-0  z-30 md:hidden"></div>
+                <nav id="nave" class="fixed bg-white text-sm inset-y-0 right-0 w-[70%] transition-all translate-x-full peer-checked:translate-x-0  z-40  md:w-[100%]  md:static md:translate-x-0 md:z-0 md:inset-0 md:flex md:transition-all md:justify-between md:ml-6 md:bg-Almost-white ">
+                    <ul class="text-xl flex flex-col  mt-16 mb-8 gap-4 py-5 px-7  md:flex-row md:mt-0 md:mb-0">
+                        <div class=" md:relative ">
+                            <li class=" flex items-center  gap-3 ">Futueres
+                                <input type="checkbox" id="arrow" class="peer hidden">
+                                <label for="arrow" class="cursor-pointer bg-arrow-down w-4 h-2 bg-cover peer-checked:bg-arrow-up  "></label>
+                            </li>
+                                <ul id="menu-items" class="hidden ml-4 my-3  [&>li]:flex [&>li]:items-center md:absolute md:bg-white  md:text-sm md:m-0 md:p-3 md:rounded-md  md:right-1 md:-left-7 md:shadow-2xl md:z-40 ">
+                                    <li class=""> <a href="#" class="flex items-center"><img src="./src/imgs/icon-todo.svg" alt=""><h2 class="ml-3">Todo List</h2></a></li>
+                                    <li class=""> <a href="#" class="flex items-center"><img src="./src/imgs/icon-calendar.svg" alt=""><h2 class="ml-3">Calendar</h2></a></li>
+                                    <li class=""> <a href="#" class="flex items-center"><img src="./src/imgs/icon-reminders.svg" alt=""><h2 class="ml-3">Reminders</h2></a></li>
+                                    <li class=""> <a href="#" class="flex items-center"><img src="./src/imgs/icon-planning.svg" alt=""><h2 class="ml-3">Planning</h2></a></li>
+                                </ul>
+                        </div>
+                        <div class="md:relative">
+                            <li class=" flex items-center   gap-3 ">Company
+                                <input type="checkbox" id="arrow-2" class="peer hidden">
+                                <label for="arrow-2" class=" cursor-pointer bg-arrow-down w-4 h-2 bg-cover peer-checked:bg-arrow-up "></label>
+                            </li>
+                                <ul id="menu-items2" class="hidden ml-4 my-3  md:absolute md:bg-white  md:text-sm md:m-0 md:p-3 md:rounded-md  md:right-1 md:-left-2 md:shadow-2xl md:z-40">
+                                    <li><a href="">History</a></li>
+                                    <li><a href="">our Team</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    
+                                </ul>
+                        </div>        
+                        <li>Careers</li>
+                        <li>Abaout</li>
+                    </ul>
+                    <div class="flex flex-col w-auto  ml-0 gap-4  justify-center items-center md:flex-row  ">
+                        <a class="md:mr-3 " href="#">Login</a>
+                        <a href="#" class="border-2 border-black rounded-xl text-center  py-3 w-[80%] md:px-4 md:py-2  ">Register</a>
+                    </div>
+                </nav> 
+            </div>
+        </header> 
+        <main class="">
+            <section class="flex flex-col my-3 md:flex-row-reverse md:w-[70%] mx-auto mt-8 ">
+                <div class=" md:w-2/5">
+                   
+                    <img class="md:hidden" src="./src/imgs/image-hero-mobile.png" alt="Hero Image">
+                    <img class="hidden md:block md:min-w-[410px]   " src="./src/imgs/image-hero-desktop.png" alt="hero image 2">
+                    
+                </div>
+                <section class="flex flex-col justify-center  items-center gap-5 my-10 p-2  md:my-0   md:items-start md:w-3/5">
+                        <h1 class="text-4xl font-extrabold text-center md:text-6xl md:text-left  ">Make <br class="hidden 2xl:block">remote Work</h1>
+                        <p class="text-center text-xl px-3 py-4 md:text-start md:text-xl  md:w-[70%] ">Get your team in sycn, no matter your location.Streamline processes, create team rituals, and watch productivity soar. </p>
+
+                        <a href="#" class="text-xl border bg-Almost-black border-Almost-black text-Almost-white px-5 py-3 rounded-xl mt-4 mb-8 hover:bg-Almost-white hover:text-Almost-black md:text-lg hover:transition-all ">Learn more</a>
+                        <div class="flex items-center justify-around  flex-wrap  w-[100%] mx-auto 2xl:w-[70%] xl:mx-0   ">
+                            
+                            <img class="" src="./src/imgs/client-databiz.svg" alt="">
+                            <img class="" src="./src/imgs/client-audiophile.svg" alt="">
+                            <img class="" src="./src/imgs/client-meet.svg" alt="">
+                            <img class="" src="./src/imgs/client-maker.svg" alt="">
+                            
+                        </div>
+                </section>
+            </section>
+        </main>
+        
+        <!-- -->
+       
+        
+<script>
+    document.getElementById('arrow').addEventListener('click', function() {
+      const menuItems = document.getElementById('menu-items');
+      menuItems.classList.toggle('hidden');
+      menuItems.classList.add('flex');
+      menuItems.classList.add('flex-col');
+      menuItems.classList.add('gap-4');
+
+
+    });
+
+    document.getElementById('arrow-2').addEventListener('click', function(){
+        const menuitems2 = document.getElementById('menu-items2');
+        menuitems2.classList.toggle('hidden');
+        menuitems2.classList.add('flex-col');
+        menuitems2.classList.add('gap-4')
+        menuitems2.classList.add('flex');
+        ;
+        
+    });
+
+    document.getElementById('menu-items').addEventListener('mouseleave', function() {
+            const menuItems = document.getElementById('menu-items');
+            menuItems.classList.add('hidden');
+            menuItems.classList.remove('flex');
+    });
+
+    document.getElementById('menu-items2').addEventListener('mouseleave', function() {
+            const menuItems = document.getElementById('menu-items2');
+            menuItems.classList.add('hidden');
+            menuItems.classList.remove('flex');
+    });
+  
+  </script>
+    </body>
+</html>
