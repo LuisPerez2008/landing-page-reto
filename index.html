@@ -107,12 +107,16 @@
 
     document.getElementById('menu-items').addEventListener('mouseleave', function() {
             const menuItems = document.getElementById('menu-items');
+            const arrow = document.getElementById('arrow');
+            arrow.classList.toggle('bg-arrow-down');
             menuItems.classList.add('hidden');
             menuItems.classList.remove('flex');
     });
 
     document.getElementById('menu-items2').addEventListener('mouseleave', function() {
             const menuItems = document.getElementById('menu-items2');
+            const arrow2 = document.getElementById('arrow-2');
+            arrow2.classList.toggle('bg-arrow-down');
             menuItems.classList.add('hidden');
             menuItems.classList.remove('flex');
     });
